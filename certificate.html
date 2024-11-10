@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Planting Certificate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Tree Planting Certificate</h1>
+        <form id="certificateForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="area">Area(s) where trees were planted:</label>
+            <input type="text" id="area" name="area" required>
+
+            <label for="trees">Number of trees planted:</label>
+            <input type="number" id="trees" name="trees" required>
+
+            <button type="button" onclick="generateCertificate()">Generate Certificate</button>
+        </form>
+
+        <div id="certificate" class="certificate hidden">
+            <img src="logo.png" alt="Logo" id="logo">
+            <h2>Certificate of Appreciation</h2>
+            <p>This is to certify that</p>
+            <h3 id="certName"></h3>
+            <p>aged <span id="certAge"></span>, has planted <span id="certTrees"></span> trees</p>
+            <p>in the area(s) of <span id="certArea"></span>.</p>
+            <p>Thank you for your invaluable contribution to making the world a greener place!</p>
+            <p>🌳🌍</p>
+            <button id="downloadBtn" onclick="downloadCertificate()">Download Certificate</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

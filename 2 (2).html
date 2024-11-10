@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0;
+        }
+
+        .profile-section {
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .profile-image {
+            background-color: #4CAF50;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin: 10px 0;
+        }
+
+        .profile-name {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .profile-name h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .profile-name h2 {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .profile-bio {
+            background-color: #ffeb3b;
+            color: #333;
+        }
+
+        .contact-info {
+            background-color: #9c27b0;
+            color: white;
+        }
+
+        .social-links {
+            background-color: #03A9F4;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .profile-section p, .profile-section a {
+            margin: 5px 0;
+            display: block;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        #i{
+            color: #ffeb3b;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-section profile-image">
+            <img src="logo.png" alt="John Doe">
+        </div>
+
+       
+        <div class="profile-section profile-name">
+            <h1>John Doe</h1>
+            <h2><span id="u">Web Developer</span> at <span id="i">Tech Solutions</span></h2>
+        </div>
+
+        
+        <div class="profile-section profile-bio">
+            <p>Passionate about creating immersive web experiences that emphasize user experience and functionality. Experienced in HTML, CSS, JavaScript, and various web frameworks.</p>
+        </div>
+
+        
+        <div class="profile-section contact-info">
+            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+
+        
+        <div class="profile-section social-links">
+            <p>LinkedIn | Twitter | GitHub</p>
+        </div>
+    </div>
+</body>
+</html>
